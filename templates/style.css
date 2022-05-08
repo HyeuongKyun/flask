@@ -1,0 +1,159 @@
+a {
+  text-decoration: none;
+  color: green;
+}
+
+li {
+  color: green;
+}
+
+body{
+  margin-left:0px;
+  margin-top:0px;
+
+}
+
+#sp{
+  margin-top: 550px;
+  margin-left: 145px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'titlefont';
+    src: url('TheCalifornication.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'Yeongdo-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.bar1{
+  width: calc(6em + 3vw);
+}
+
+
+#nun{
+  position: absolute;
+  top: 7px;
+  margin-left: 5px;
+}
+.searching{
+  width:500px; height:50px;
+  border:  2px solid rgb(25, 206, 90);
+  position:relative;
+  right:-20px
+}
+#loginform{
+  position:absolute;
+  bottom: 800px;
+  top: 20px;
+  left: 20px;
+}
+.login{
+  width:100px;
+}
+#searb{
+  width: 50px; height: 50px;
+  background: rgb(25, 206, 90);
+  position: absolute; right: 0; top: 0; border: none;
+  font: size 15px; font-weight: bold; color: white;
+}
+
+#bar{height: 35px; width: 420px; position: absolute;
+  top: 5px; left: 50px; border: none; font-size: 25px;}
+
+
+#title{
+  font-family: 'titlefont';
+  font-size: calc(1em + 3vw);
+  color: bisque;
+  position:absolute;
+  bottom: 800px;
+  top: 20px;
+  right: 60px;
+}
+
+#imgs{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#reason_f{
+  font-family: 'Yeongdo-Rg';
+  margin-top: 15px;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 30px;
+}
+
+#reason_i{
+  width: 240px;
+  position: absolute;
+  height: 300px;
+  border-radius: 5px;
+  margin-left: 13px;
+}
+
+#reason_fs{
+  margin-top: 15px;
+  color: white;
+  font-family: 'Yeongdo-Rg';
+  font-size: 30px;
+  position: absolute;
+  left: 281px;
+}
+
+#reason_is{
+  width: 240px;
+  height: 300px;
+  position: absolute;
+  left : 264px;
+  border-radius: 5px;
+}
+
+#reason_ft{
+  margin-top: 15px;
+  color: white;
+  font-family: 'Yeongdo-Rg';
+  font-size: 30px;
+  position: absolute;
+  left: 531px;
+}
+
+#reason_it{
+  width: 240px;
+  height: 300px;
+  position: absolute;
+  left : 514px;
+  border-radius: 5px;
+}
+
+#reason_ff{
+  margin-top: 15px;
+  color: white;
+  font-family: 'Yeongdo-Rg';
+  font-size: 30px;
+  position: absolute;
+  left: 778px;
+}
+
+#reason_if{
+  width: 240px;
+  height: 300px;
+  position: absolute;
+  left : 763px;
+  border-radius: 5px;
+}
