@@ -21,11 +21,7 @@ PW = "world"
 
 
 @application.route("/")
-
-
-
 def index():
-    
     stylecss = f"/style.css"
     photo1 = f"img/maintitle.jpg"
     photo2 = f"img/search.png"
@@ -40,6 +36,25 @@ def index():
         return render_template("index.html",login=False, photo1 = photo1, photo2 = photo2, photo3 = photo3,photo4 = photo4 , photo5 = photo5, photo6 = photo6,stylecss=stylecss)
     
     return render_template("index.html", photo1 = photo1, photo2 = photo2, photo3 = photo3,photo4 = photo4 , photo5 = photo5, photo6 = photo6,stylecss=stylecss)
+@application.route("/fitinfo")
+def fitinfo():
+    frequencyi = database.load_list()
+    length = len(frequencyi)
+    photo = f"img/maintitle.jpg"
+    return render_template("fitinfo.html", photo = photo, frequencyi=frequencyi, length=length)
+@application.route("/healthyfood")
+def healthyfood():
+    photo = f"img/maintitle.jpg"
+    return render_template("healthyfood.html", photo = photo)
+
+
+@application.route("/habit")
+def habit():
+    habitt = database.load_list_habit()
+    length = len(habitt)
+    photo = f"img/maintitle.jpg"
+    return render_template("habit.html", photo = photo, habitt=habitt, length=length)
+
 
 # def home():
 #     if "userID" in session: #로그인이 된 상태
@@ -81,37 +96,7 @@ def logout():
 #     photo = f"img/maintitle.jpg"
 #     return render_template("fitinfo.html", photo = photo)
 
-@application.route("/fitinfo")
-def fitinfo():
-    # location = reguest.args.get("location")
-    # cleaness = reguest.args.get("clean")
-    # built_in = reguest.args.get("built")
-    
-    # database.save(location,cleaness,built_in)
-    
-    frequencyi = database.load_list()
-    length = len(frequencyi)
-    
-    
-    
-    photo = f"img/maintitle.jpg"
-    return render_template("fitinfo.html", photo = photo, frequencyi=frequencyi, length=length)
 
-
-@application.route("/habit")
-def habit():
-    habitt = database.load_list_habit()
-    length = len(habitt)
-    
-    photo = f"img/maintitle.jpg"
-    return render_template("habit.html", photo = photo, habitt=habitt, length=length)
-
-
-# @application.route("/list")
-# def list():
-#     house_list = database.load_list()
-#     length = len(house.list)
-#     return render_template()
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0')
